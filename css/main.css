@@ -1,0 +1,16 @@
+.body{
+    background-color: black;
+    color: white;
+}
+
+#nav-brand{
+    border-radius: 15%;
+    padding: 0.30%;
+    width: 8%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ul li a{
+    color:white;
+}
