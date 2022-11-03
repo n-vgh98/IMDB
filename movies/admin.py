@@ -1,3 +1,42 @@
 from django.contrib import admin
+from movies.models import *
 
-# Register your models here.
+class RoleAdmin(admin.ModelAdmin):
+    list_display = ('id', 'title', 'created_time')
+    search_fields = ('title',)
+
+class GenreAdmin(admin.ModelAdmin):
+    list_display = ('id', 'title')
+    search_fields = ('title',)
+
+class CrewAdmin(admin.ModelAdmin):
+    list_display = ('id', 'first_name', 'last_name', 'gender', 'is_valid')
+    search_fields = ('first_name', 'last_name')
+    list_filter = ('is_valid',)
+
+class MovieCrewInline(admin.TabularInline):
+    model = MovieCrew
+    extra = 5
+    readonly_fields = ('crew_gender', )
+
+    def crew_gender(self, obj):
+        return obj.crew.get_gender_display()
+
+class GenreInlineAdmin(admin.StackedInline):
+    model = Movie.genres.through
+    extra = 3
+
+class MovieAdmin(admin.ModelAdmin):
+    list_display = ('id', 'title', 'release_date', 'is_valid')
+    search_fields = ('title',)
+    list_filter = ('is_valid',)
+    inlines = (MovieCrewInline, GenreInlineAdmin)
+
+
+
+admin.site.register(Movie, MovieAdmin)
+admin.site.register(Crew, CrewAdmin)
+admin.site.register(Role, RoleAdmin)
+admin.site.register(Genre, GenreAdmin)
+
+
