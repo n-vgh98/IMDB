@@ -10,23 +10,38 @@
           <img src="" class="d-block w-100"  width="800" height="550" alt="{{ movie.title }}">
           {% endif %}
           <div class="p-4">
-            <button type="button" class="btn btn-dark" style="border-radius:20px">dark</button>
-            <button type="button" class="btn btn-dark" style="border-radius:20px">dark</button>
-            <button type="button" class="btn btn-dark" style="border-radius:20px">dark</button>
-            <button type="button" class="btn btn-dark" style="border-radius:20px">dark</button>
+<!--            <button type="button" class="btn btn-dark" style="border-radius:20px">{{ movie.genres.title }}</button>-->
+<!--            <button type="button" class="btn btn-dark" style="border-radius:20px">dark</button>-->
+<!--            <button type="button" class="btn btn-dark" style="border-radius:20px">dark</button>-->
+<!--            <button type="button" class="btn btn-dark" style="border-radius:20px">dark</button>-->
           </div>
           <p>{{ movie.description }}</p>
           <hr>
           <p>
-            <strong>Director</strong><a style="margin-left:20px;text-decoration:none" href="#"> David Leitch</a>
+            <strong>Director</strong>
+              {% for director in directors %}
+              <a style="margin-left:20px;text-decoration:none" href="#">
+                  {{ director }}
+              </a>
+              {% endfor %}
           </p>
           <hr>
           <p>
-            <strong>Writers</strong><a style="margin-left:20px;text-decoration:none" href="#"> David Leitch</a>
+            <strong>Writers</strong>
+              {% for Writer in Writers %}
+              <a style="margin-left:20px;text-decoration:none" href="#">
+                  {{ Writer }}
+              </a>
+              {% endfor %}
           </p>
           <hr>
           <p>
-            <strong>Stars</strong><a style="margin-left:20px;text-decoration:none" href="#"> David Leitch</a>
+            <strong>Stars</strong>
+              {% for actor in actors %}
+              <a style="margin-left:20px;text-decoration:none" href="#">
+                  {{actor}}
+              </a>
+              {% endfor %}
           </p>
         </div>
         <div class="col-md-3 p-3 text-center">
