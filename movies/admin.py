@@ -2,7 +2,7 @@ from django.contrib import admin
 from movies.models import *
 
 class RoleAdmin(admin.ModelAdmin):
-    list_display = ('id', 'title', 'created_time')
+    list_display = ('id', 'title')
     search_fields = ('title',)
 
 class GenreAdmin(admin.ModelAdmin):
