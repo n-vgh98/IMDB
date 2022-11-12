@@ -1,4 +1,5 @@
 {% extends '_base.html' %}
+{% load static %}
 
 {% block title %}index{% endblock %}
 
@@ -13,13 +14,13 @@
             </div>
             <div class="carousel-inner" style="border-radius:20px;">
               <div class="carousel-item active">
-                <img src="images/slider/imdb-photo1.jpg" width="800" height="530" class="d-block w-100" alt="...">
+                <img src="{% static 'movies/images/slider/imdb-photo1.jpg' %}" width="800" height="530" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="images/slider/imdb-photo2.jpg" width="800" height="530" class="d-block w-100" alt="...">
+                <img src="{% static 'movies/images/slider/imdb-photo2.jpg' %}" width="800" height="530" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="images/slider/imdb-photo3.jpg" width="800" height="530" class="d-block w-100" alt="...">
+                <img src="{% static 'movies/images/slider/imdb-photo3.jpg' %}" width="800" height="530" class="d-block w-100" alt="...">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
