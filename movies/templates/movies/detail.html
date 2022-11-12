@@ -4,18 +4,18 @@
   <div class="row">
         <div class="col-md-9 p-3">
           <h1 class="p-3">{{ movie.title }}</h1>
-          <img src="images/slider/imdb-photo1.jpg" class="d-block w-100"  width="800" height="550" alt="Responsive image">
+          {% if movie.avatar %}
+          <img src="{{ movie.avatar.url }}" class="d-block w-100"  width="800" height="550" alt="{{ movie.title }}">
+          {% else %}
+          <img src="" class="d-block w-100"  width="800" height="550" alt="{{ movie.title }}">
+          {% endif %}
           <div class="p-4">
             <button type="button" class="btn btn-dark" style="border-radius:20px">dark</button>
             <button type="button" class="btn btn-dark" style="border-radius:20px">dark</button>
             <button type="button" class="btn btn-dark" style="border-radius:20px">dark</button>
             <button type="button" class="btn btn-dark" style="border-radius:20px">dark</button>
           </div>
-          <p>
-            Five assassins aboard a swiftly-moving bullet train find out that their missions have something in common.
-            Five assassins aboard a swiftly-moving bullet train find out that their missions have something in common.
-            Five assassins aboard a swiftly-moving bullet train find out that their missions have something in common.
-          </p>
+          <p>{{ movie.description }}</p>
           <hr>
           <p>
             <strong>Director</strong><a style="margin-left:20px;text-decoration:none" href="#"> David Leitch</a>
