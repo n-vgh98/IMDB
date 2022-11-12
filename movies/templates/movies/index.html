@@ -46,7 +46,11 @@
         {% for movie in movies %}
         <div class="col">
           <div class="card h-100 text-white bg-dark">
-            <img src="images/slider/imdb-photo1.jpg" class="card-img-top" alt="...">
+            {% if movie.avatar %}
+                <img src="{{ movie.avatar.url }}" class="card-img-top" alt="...">
+            {% else %}
+                <img src="" class="card-img-top" alt="...">
+            {% endif %}
             <div class="card-body">
               <h5 class="card-title ">{{ movie.title }}</h5>
               <p class="card-text">{{ movie.description }}</p>
