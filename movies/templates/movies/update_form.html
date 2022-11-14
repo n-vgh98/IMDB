@@ -12,7 +12,7 @@
                 </div>
               <button type="submit" class="m-3 btn btn-primary text-center">Update</button>
             </form>
-            <form method="post" action="{% url 'create_movie' %}" enctype="multipart/form-data">
+            <form method="post" action="{% url 'delete_movie' movie.id %}" enctype="multipart/form-data">
                 {% csrf_token %}
               <button type="submit" class="m-3 btn btn-danger text-center">Delete</button>
             </form>

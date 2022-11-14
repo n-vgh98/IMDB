@@ -15,18 +15,18 @@ def detail_movie(request, pk):
     genres = movie.genres
     movie_crew = MovieCrew.objects.filter(movie=movie).select_related('crew', 'role')
     directors = []
-    Writers = []
+    writers = []
     actors = []
     for crew in movie_crew:
         if crew.role.title == 'director':
             directors.append(crew.crew.full_name)
         elif crew.role.title == 'Writer':
-            Writers.append(crew.crew.full_name)
+            writers.append(crew.crew.full_name)
         elif crew.role.title == 'actor':
             actors.append(crew.crew.full_name)
 
     return render(request, 'movies/detail.html',
-                  {'movie': movie, 'directors': directors, 'Writers': Writers, 'actors': actors, 'genres': genres})
+                  {'movie': movie, 'directors': directors, 'writers': writers, 'actors': actors, 'genres': genres})
 
 
 def create_movie(request):
@@ -61,6 +61,14 @@ def edit_movie(request, pk):
             form = MovieForm(instance=movie)
             context = {
                 'movie': movie,
-                'form' : form,
+                'form': form,
             }
             return render(request, 'movies/update_form.html', context=context)
+
+
+def delete_movie(request, pk):
+    movie = get_object_or_404(Movie, pk=pk)
+    movie.is_valid = False
+    movie.save()
+
+    return redirect('movies_list')
