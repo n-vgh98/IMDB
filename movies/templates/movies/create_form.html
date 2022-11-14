@@ -5,7 +5,7 @@
 {% block content %}
     <div class="row p-3">
         <div class="col-md-8 offset-2">
-            <form method="post" action="{% url 'movies_list' %}" enctype="multipart/form-data">
+            <form method="post" action="{% url 'show_create_form' %}" enctype="multipart/form-data">
                 {% csrf_token %}
                 <div class="container">
                     {{ form |crispy }}

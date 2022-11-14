@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from movies.models import *
-from  .forms import MovieForm
-
+from .forms import MovieForm
+from django.shortcuts import redirect
 
 
 def movies_list(request):
@@ -29,6 +29,18 @@ def detail_movie(request, pk):
                   {'movie': movie, 'directors': directors, 'Writers': Writers, 'actors': actors, 'genres': genres})
 
 
-def user_create_form(request):
-    form = MovieForm()
-    return render(request, 'movies/create_form.html', {'form': form})
+def show_create_form(request):
+    if request.method == 'GET':
+        form = MovieForm()
+        return render(request, 'movies/create_form.html', {'form': form})
+    elif request.method == 'POST':
+        form = MovieForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('movies_list')
+        else:
+            form = MovieForm()
+            return render(request, 'movies/create_form.html', {'form': form})
+
+
+
