@@ -46,21 +46,26 @@
         {% for movie in movies %}
         <div class="col">
             <a href={% url "detail_movie" movie.id %} style="text-decoration:none;">
-              <div class="card h-100 text-white bg-dark">
-                  {% if movie.avatar %}
-                  <img src="{{ movie.avatar.url }}" class="card-img-top" alt="...">
-                  {% else %}
-                  <img src="" class="card-img-top" alt="...">
-                  {% endif %}
-                  <div class="card-body">
-                      <h5 class="card-title ">{{ movie.title }}</h5>
-                      <p class="card-text">{{ movie.description }}</p>
+                  <div class="card h-100 text-white bg-dark">
+                      {% if movie.avatar %}
+                      <img src="{{ movie.avatar.url }}" class="card-img-top" alt="...">
+                      {% else %}
+                      <img src="" class="card-img-top" alt="...">
+                      {% endif %}
+                      <div class="card-body">
+                          <h5 class="card-title ">{{ movie.title }}</h5>
+                          <p class="card-text">{{ movie.description }}</p>
+                      </div>
                   </div>
-              </div>
             </a>
         </div>
         {% endfor %}
       </div>
+    <div class="row">
+        <div class="col-md-12 text-center p-5">
+            <a href="{% url 'create_movie'%}" class="btn btn-primary">If do you want to create your movie,<br><span style="color:black;font-size:30px; font-weight: bold;"> click here!!</span></a>
+        </div>
+    </div>
       <!-- end movie card -->
       <!-- most popular actors -->
 

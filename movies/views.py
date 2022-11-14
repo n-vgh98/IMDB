@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from movies.models import *
 from .forms import MovieForm
-from django.shortcuts import redirect
+from django.shortcuts import redirect, get_object_or_404
 
 
 def movies_list(request):
@@ -11,7 +11,7 @@ def movies_list(request):
 
 
 def detail_movie(request, pk):
-    movie = Movie.objects.get(pk=pk)
+    movie = get_object_or_404(Movie, pk=pk)
     genres = movie.genres
     movie_crew = MovieCrew.objects.filter(movie=movie).select_related('crew', 'role')
     directors = []
@@ -29,7 +29,7 @@ def detail_movie(request, pk):
                   {'movie': movie, 'directors': directors, 'Writers': Writers, 'actors': actors, 'genres': genres})
 
 
-def show_create_form(request):
+def create_movie(request):
     if request.method == 'GET':
         form = MovieForm()
         return render(request, 'movies/create_form.html', {'form': form})
@@ -43,4 +43,24 @@ def show_create_form(request):
             return render(request, 'movies/create_form.html', {'form': form})
 
 
-
+def edit_movie(request, pk):
+    movie = get_object_or_404(Movie, pk=pk, is_valid=True)
+    if request.method == 'GET':
+        form = MovieForm(instance=movie)
+        context = {
+            'movie': movie,
+            'form': form,
+        }
+        return render(request, 'movies/update_form.html', context=context)
+    elif request.method == 'POST':
+        form = MovieForm(request.POST, request.FILES, instance=movie)
+        if form.is_valid():
+            form.save()
+            return redirect('detail_movie', pk=pk)
+        else:
+            form = MovieForm(instance=movie)
+            context = {
+                'movie': movie,
+                'form' : form,
+            }
+            return render(request, 'movies/update_form.html', context=context)

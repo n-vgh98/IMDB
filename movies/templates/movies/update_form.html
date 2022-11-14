@@ -1,0 +1,24 @@
+{% extends '_base.html'%}
+{% load crispy_forms_tags  %}
+{% load static %}
+
+{% block content %}
+    <div class="row p-3">
+        <div class="col-md-8 offset-2">
+            <form method="post" action="{% url 'edit_movie' movie.id %}" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="container">
+                    {{ form |crispy }}
+                </div>
+              <button type="submit" class="m-3 btn btn-primary text-center">Update</button>
+            </form>
+            <form method="post" action="{% url 'create_movie' %}" enctype="multipart/form-data">
+                {% csrf_token %}
+              <button type="submit" class="m-3 btn btn-danger text-center">Delete</button>
+            </form>
+
+        </div>
+    </div>
+
+
+{% endblock %}
