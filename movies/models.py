@@ -68,3 +68,4 @@ class MovieCrew(models.Model):
 
     class Meta:
         unique_together = ('movie', 'crew', 'role')
+

@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     # local apps
     'movies.apps.MoviesConfig',
+    'users.apps.UsersConfig',
 ]
 
 MIDDLEWARE = [
@@ -129,3 +130,5 @@ MEDIA_URL = '/media/'
 
 # cripsy form settings
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+AUTH_USER_MODEL = 'users.User'
