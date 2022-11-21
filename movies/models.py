@@ -1,4 +1,7 @@
 from django.db import models
+from django.conf import settings
+from django.db.models import Avg
+from django.core.validators import MinValueValidator, MaxValueValidator
 
 
 class Genre(models.Model):
@@ -58,6 +61,11 @@ class Movie(models.Model):
     def __str__(self):
         return self.title
 
+    @property
+    def rate(self):
+        avg_rate = self.movie_rates.all().aggregate(avg=Avg('rate'))
+        return avg_rate.get('avg') or 1
+
 
 class MovieCrew(models.Model):
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE)
@@ -69,3 +77,19 @@ class MovieCrew(models.Model):
     class Meta:
         unique_together = ('movie', 'crew', 'role')
 
+
+class AbstractRate(models.Model):
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name="user_rates")
+    rate = models.PositiveSmallIntegerField(validators=[MinValueValidator(1), MaxValueValidator(5)])
+    created_time = models.DateTimeField(auto_now_add=True)
+    modified_time = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        abstract = True
+
+
+class MovieRate(AbstractRate):
+    movie = models.ForeignKey(Movie, on_delete=models.CASCADE, related_name='movie_rates')
+
+    class Meta:
+        constraints = [models.UniqueConstraint(fields=('user', 'movie'), name='unique_user_rate_movie')]
