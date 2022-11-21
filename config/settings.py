@@ -134,3 +134,4 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 AUTH_USER_MODEL = 'users.User'
 
 LOGIN_REDIRECT_URL = 'movies_list'
+LOGOUT_REDIRECT_URL = 'movies_list'
