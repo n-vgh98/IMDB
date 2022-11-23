@@ -46,6 +46,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -53,6 +54,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'movies.middleware.TimeMiddleware',
 ]
 
 ROOT_URLCONF = 'config.urls'
@@ -77,6 +79,49 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '[{levelname}] [{asctime}] [{module}.{lineno}] [{process:d}] [{thread:d}] {message}',
+            'style': '{',
+        },
+        'simple': {
+            'format': '[{levelname}] [{message}]',
+            'style': '{',
+        },
+    },
+    'handlers': {
+        'django': {
+            'level': 'ERROR',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(BASE_DIR, 'logs/django.log'),
+            'formatter': 'verbose'
+        },
+        'response_time': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(BASE_DIR, 'logs/response_time.log'),
+            'formatter': 'verbose'
+        },
+    },
+    'loggers': {
+        'django.request': {
+            'handlers': ['django'],
+            'level': 'ERROR',
+            'propagate': True,
+        },
+        'response_time': {
+            'handlers': ['response_time'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+    },
+}
+
+
 
 DATABASES = {
     'default': {

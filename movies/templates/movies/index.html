@@ -3,118 +3,131 @@
 
 {% block title %}index{% endblock %}
 
-{% block content%}
-<div class="row">
+{% block content %}
+    <div class="row">
         <div class="col-12 p-4">
-          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner" style="border-radius:20px;">
+                    <div class="carousel-item active">
+                        <img src="{% static 'movies/images/slider/imdb-photo1.jpg' %}" width="800" height="530"
+                             class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'movies/images/slider/imdb-photo2.jpg' %}" width="800" height="530"
+                             class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'movies/images/slider/imdb-photo3.jpg' %}" width="800" height="530"
+                             class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="carousel-inner" style="border-radius:20px;">
-              <div class="carousel-item active">
-                <img src="{% static 'movies/images/slider/imdb-photo1.jpg' %}" width="800" height="530" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="{% static 'movies/images/slider/imdb-photo2.jpg' %}" width="800" height="530" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="{% static 'movies/images/slider/imdb-photo3.jpg' %}" width="800" height="530" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
 
         </div>
-      </div>
-      <!-- end slider -->
-      <!-- start movie card -->
-      <div class="row pt-5">
+    </div>
+    <!-- end slider -->
+    <!-- start movie card -->
+    <div class="row pt-5">
         <div class="col-12">
-          <h3 class="text-warning text-center">LAST MOVIES</h3>
+            <h3 class="text-warning text-center">LAST MOVIES</h3>
         </div>
-      </div>
-      <div class="row row-cols-1 row-cols-md-6 g-2 p-4 justify-content-center">
+    </div>
+    <div class="row row-cols-1 row-cols-md-6 g-2 p-4 justify-content-center">
         {% for movie in movies %}
-        <div class="col">
+            <div class="col">
 
-                  <div class="card h-100 text-white bg-dark">
-                       <a href={% url "detail_movie" movie.id %} style="text-decoration:none;">
-                      {% if movie.avatar %}
-                      <img src="{{ movie.avatar.url }}" class="card-img-top" alt="...">
-                      {% else %}
-                      <img src="" class="card-img-top" alt="...">
-                      {% endif %}
-                      </a>
-                      <div class="card-body">
-                          <a href={% url "detail_movie" movie.id %} style="text-decoration:none;">
+                <div class="card h-100 text-white bg-dark">
+                    <a href={% url "detail_movie" movie.id %} style="text-decoration:none;">
+                        {% if movie.avatar %}
+                            <img src="{{ movie.avatar.url }}" class="card-img-top" alt="...">
+                        {% else %}
+                            <img src="" class="card-img-top" alt="...">
+                        {% endif %}
+                    </a>
+                    <div class="card-body">
+                        <a href={% url "detail_movie" movie.id %} style="text-decoration:none;">
                             <h5 class="card-title ">{{ movie.title }}</h5>
-                          </a>
-                          <p class="card-text">{{ movie.description }}</p>
-                           <i class="fa fa-star rating-color text-warning" style="font-size: 15px"></i> <span style="font-size: 20px;">{{ movie.rate}}</span>
-                          <a href="#myModal" class="btn btn-lg btn-primary" data-bs-toggle="modal">Launch Demo Modal</a>
-
-<i class="fa fa-star rating-color" style="font-size: 15px"></i>
-
-<!-- modal-->
+                        </a>
+                        <p class="card-text">{{ movie.description }}</p>
+                        <i class="fa fa-star rating-color text-warning" style="font-size: 15px"></i> <span
+                            style="font-size: 20px;">{{ movie.rate | floatformat:2 }}</span>
+                        <a href="#myModal" data-bs-toggle="modal"><i class="fa fa-star rating-color"
+                                                                     style="font-size: 15px"></i></a>
 
 
-                        <div id="myModal" class="modal fade">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
+                        <!-- modal-->
+
+
+                        <div id="myModal" class="modal fade bd-example-modal-sm" role="dialog"
+                             aria-labelledby="mySmallModalLabel" aria-hidden="true" id="{{ movie.id }}">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content" style="background-color: black;">
                                     <div class="modal-header">
-                                        <h5 class="modal-title">Confirmation</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                        <!--                                        <h5 class="modal-title">Confirmation</h5>-->
+                                        <button type="button" class="btn-close btn-primary"
+                                                data-bs-dismiss="modal"></button>
                                     </div>
-                                    <div class="modal-body">
-                                        <p>Do you want to save changes to this document before closing?</p>
-                                        <p class="text-secondary"><small>If you don't save, your changes will be lost.</small></p>
+
+
+                                    <div class="modal-body bg-light">
+                                        <form action="{% url 'rate_movie' movie.id %}" method="post">
+                                            {% csrf_token %}
+                                            {#                                               <div class="rating rating2">#}
+                                            <input type="number" name="rate" value="rate">
+
+                                            {#                                                --><a href="#5" title="Give 5 stars"><input type="number" value="rate" name="rate">★</a><!--#}
+                                            {#                                                --><a href="#4" title="Give 4 stars">★</a><!--#}
+                                            {#                                                --><a href="#3" title="Give 3 stars">★</a><!--#}
+                                            {#                                                --><a href="#2" title="Give 2 stars">★</a><!--#}
+                                            {#                                                --><a href="#1" title="Give 1 star">★</a>#}
+                                            {#                                                </div>#}
+                                            <div class="modal-footer text-center">
+                                                <button type="submit" class="btn btn-primary" style="width:270px;">Save
+                                                    changes
+                                                </button>
+                                            </div>
+                                        </form>
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
-                                    </div>
+
+
                                 </div>
                             </div>
                         </div>
 
 
+                    </div>
+                </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-                      </div>
-                  </div>
-
-
-        </div>
+            </div>
         {% endfor %}
-      </div>
+    </div>
     <div class="row">
         <div class="col-md-12 text-center p-5">
-            <a href="{% url 'create_movie'%}" class="btn btn-primary">If do you want to create your movie,<br><span style="color:black;font-size:30px; font-weight: bold;"> click here!!</span></a>
+            <a href="{% url 'create_movie' %}" class="btn btn-primary">If do you want to create your movie,<br><span
+                    style="color:black;font-size:30px; font-weight: bold;"> click here!!</span></a>
         </div>
     </div>
-      <!-- end movie card -->
-      <!-- most popular actors -->
+    <!-- end movie card -->
+    <!-- most popular actors -->
 
-      <!-- most popular actors -->
+    <!-- most popular actors -->
 {% endblock %}

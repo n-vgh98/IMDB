@@ -72,3 +72,14 @@ def delete_movie(request, pk):
     movie.save()
 
     return redirect('movies_list')
+
+
+def rate_movie(request, pk):
+    movie = get_object_or_404(Movie, pk=pk)
+    rating = MovieRate.objects.create(
+        movie=movie,
+        rate=int(request.POST.get('rate')),
+        user=request.user,
+    )
+    rating.save()
+    return redirect('movies_list')

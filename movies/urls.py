@@ -8,6 +8,7 @@ urlpatterns = [
     path('create_movie/', create_movie, name='create_movie'),
     path('edit_movie/<int:pk>', edit_movie, name='edit_movie'),
     path('delete_movie/<int:pk>', delete_movie, name='delete_movie'),
+    path('rate_moive/<int:pk>', rate_movie, name='rate_movie'),
 
 
 ]
