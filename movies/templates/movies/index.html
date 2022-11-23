@@ -69,15 +69,15 @@
                         <p class="card-text">{{ movie.description }}</p>
                         <i class="fa fa-star rating-color text-warning" style="font-size: 15px"></i> <span
                             style="font-size: 20px;">{{ movie.rate | floatformat:2 }}</span>
-                        <a href="#myModal" data-bs-toggle="modal"><i class="fa fa-star rating-color"
+                        <a href="#myModal{{ movie.id }}" data-bs-toggle="modal"><i class="fa fa-star rating-color"
                                                                      style="font-size: 15px"></i></a>
 
 
                         <!-- modal-->
 
 
-                        <div id="myModal" class="modal fade bd-example-modal-sm" role="dialog"
-                             aria-labelledby="mySmallModalLabel" aria-hidden="true" id="{{ movie.id }}">
+                        <div id="myModal{{ movie.id }}" class="modal fade bd-example-modal-sm" role="dialog"
+                             aria-labelledby="mySmallModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-sm">
                                 <div class="modal-content" style="background-color: black;">
                                     <div class="modal-header">
@@ -87,22 +87,15 @@
                                     </div>
 
 
-                                    <div class="modal-body bg-light">
+                                    <div class="modal-body">
                                         <form action="{% url 'rate_movie' movie.id %}" method="post">
                                             {% csrf_token %}
-                                            {#                                               <div class="rating rating2">#}
-                                            <input type="number" name="rate" value="rate">
-
-                                            {#                                                --><a href="#5" title="Give 5 stars"><input type="number" value="rate" name="rate">★</a><!--#}
-                                            {#                                                --><a href="#4" title="Give 4 stars">★</a><!--#}
-                                            {#                                                --><a href="#3" title="Give 3 stars">★</a><!--#}
-                                            {#                                                --><a href="#2" title="Give 2 stars">★</a><!--#}
-                                            {#                                                --><a href="#1" title="Give 1 star">★</a>#}
-                                            {#                                                </div>#}
-                                            <div class="modal-footer text-center">
-                                                <button type="submit" class="btn btn-primary" style="width:270px;">Save
-                                                    changes
-                                                </button>
+                                           <div class="rating rating2">
+                                            <a href="#5" title="Give 5 stars"><input type="submit" name="rate" value="5">★</a>
+                                            <a href="#4" title="Give 4 stars"><input type="submit" name="rate" value="4">★</a>
+                                            <a href="#3" title="Give 3 stars"><input type="submit" name="rate" value="3">★</a>
+                                            <a href="#2" title="Give 2 stars"><input type="submit" name="rate" value=2>★</a>
+                                            <a href="#1" title="Give 1 star"><input type="submit" name="rate" value=1>★</a>
                                             </div>
                                         </form>
                                     </div>
