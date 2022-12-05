@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # third party
     'crispy_forms',
+    'rest_framework',
     # local apps
     'movies.apps.MoviesConfig',
     'users.apps.UsersConfig',
@@ -180,3 +181,4 @@ AUTH_USER_MODEL = 'users.User'
 
 LOGIN_REDIRECT_URL = 'movies_list'
 LOGOUT_REDIRECT_URL = 'movies_list'
+LOGIN_URL = '/login/'
