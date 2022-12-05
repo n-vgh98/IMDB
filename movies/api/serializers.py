@@ -1,1 +1,4 @@
-from django.contrib.auth.models import M
+from movies.models import Movie
+
+
+
