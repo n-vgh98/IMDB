@@ -425,3 +425,191 @@
 [ERROR] [2022-12-02 08:08:34,957] [middleware.21] [12471] [139829812655680] <HttpResponse status_code=500, "text/html; charset=utf-8">
 [ERROR] [2022-12-02 08:09:04,928] [middleware.21] [12471] [139829812655680] <Response status_code=200, "application/json">
 [ERROR] [2022-12-02 08:09:13,669] [middleware.21] [12471] [139829812655680] <Response status_code=200, "application/json">
+[ERROR] [2022-12-08 13:51:32,921] [middleware.21] [11821] [139861548856896] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 13:51:54,121] [middleware.21] [11821] [139861538367040] <HttpResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 13:51:54,546] [middleware.21] [11821] [139861306631744] <HttpResponseNotFound status_code=404, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 13:51:54,608] [middleware.21] [11821] [139861315024448] <HttpResponseNotFound status_code=404, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 13:51:58,919] [middleware.21] [11821] [139861315024448] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 13:51:59,300] [middleware.21] [11821] [139861315024448] <HttpResponseNotFound status_code=404, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 13:54:04,772] [middleware.21] [12277] [139811172120128] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 13:54:20,700] [middleware.21] [12289] [140684924286528] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 13:54:35,670] [middleware.21] [12289] [140684913796672] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 13:54:51,729] [middleware.21] [12325] [139860939634240] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-08 13:54:56,990] [middleware.21] [12325] [139860921800256] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-08 14:00:19,924] [middleware.21] [12325] [139860939634240] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-08 14:00:20,783] [middleware.21] [12325] [139860939634240] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-08 14:00:21,355] [middleware.21] [12325] [139860939634240] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-08 14:00:21,598] [middleware.21] [12325] [139860939634240] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-08 14:00:21,827] [middleware.21] [12325] [139860939634240] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-08 14:00:22,938] [middleware.21] [12325] [139860939634240] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-08 14:00:56,772] [middleware.21] [12605] [139995525412416] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-08 14:00:57,755] [middleware.21] [12605] [139995525412416] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-08 14:00:57,926] [middleware.21] [12605] [139995525412416] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-08 14:02:42,548] [middleware.21] [12672] [139797158950464] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-08 14:02:49,878] [middleware.21] [12672] [139797142165056] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-08 14:07:39,991] [middleware.21] [12831] [140705839183424] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-08 14:08:29,186] [middleware.21] [12831] [140705839183424] <JsonResponse status_code=400, "application/json">
+[ERROR] [2022-12-08 14:08:58,892] [middleware.21] [12905] [139873189099072] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 14:09:21,479] [middleware.21] [12905] [139873178609216] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-08 14:09:22,104] [middleware.21] [12905] [139873178609216] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-08 14:09:26,920] [middleware.21] [12905] [139873178609216] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-08 14:09:30,862] [middleware.21] [12905] [139873178609216] <TemplateResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 14:09:31,509] [middleware.21] [12905] [139872790640192] <TemplateResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 14:09:33,601] [middleware.21] [12905] [139873178609216] <TemplateResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 14:09:33,715] [middleware.21] [12905] [139873160775232] <HttpResponse status_code=200, "text/javascript; charset="utf-8"">
+[ERROR] [2022-12-08 14:09:33,820] [middleware.21] [12905] [139873160775232] <HttpResponse status_code=200, "text/javascript; charset="utf-8"">
+[ERROR] [2022-12-08 14:09:43,528] [middleware.21] [12905] [139873143989824] <TemplateResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 14:09:43,617] [middleware.21] [12905] [139872790640192] <HttpResponse status_code=200, "text/javascript; charset="utf-8"">
+[ERROR] [2022-12-08 14:09:43,683] [middleware.21] [12905] [139873160775232] <HttpResponse status_code=200, "text/javascript; charset="utf-8"">
+[ERROR] [2022-12-08 14:09:49,901] [middleware.21] [12905] [139873170216512] <TemplateResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 14:09:56,300] [middleware.21] [12905] [139873170216512] <TemplateResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 14:10:06,509] [middleware.21] [12905] [139873170216512] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-08 14:11:09,276] [middleware.21] [12905] [139873189099072] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-08 14:12:45,966] [middleware.21] [12905] [139873189099072] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 14:16:14,832] [middleware.21] [13143] [139956962981440] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 14:17:21,297] [middleware.21] [13187] [140695316723264] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 14:19:31,053] [middleware.21] [13225] [140719386785344] <HttpResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 14:19:31,359] [middleware.21] [13225] [140719167632960] <FileResponse status_code=200, "image/jpeg">
+[ERROR] [2022-12-08 14:19:31,366] [middleware.21] [13225] [140719378392640] <FileResponse status_code=200, "image/jpeg">
+[ERROR] [2022-12-08 14:19:31,421] [middleware.21] [13225] [140719386785344] <HttpResponseNotFound status_code=404, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 14:19:31,440] [middleware.21] [13225] [140719158191680] <FileResponse status_code=200, "image/jpeg">
+[ERROR] [2022-12-08 14:19:31,454] [middleware.21] [13225] [140719149798976] <FileResponse status_code=200, "image/jpeg">
+[ERROR] [2022-12-08 14:19:35,752] [middleware.21] [13225] [140719149798976] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-08 14:20:05,978] [middleware.21] [13225] [140719149798976] <TemplateResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 14:20:06,229] [middleware.21] [13225] [140719149798976] <TemplateResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 14:20:08,795] [middleware.21] [13225] [140719149798976] <TemplateResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 14:20:08,860] [middleware.21] [13225] [140719149798976] <HttpResponse status_code=200, "text/javascript; charset="utf-8"">
+[ERROR] [2022-12-08 14:21:02,094] [middleware.21] [13497] [140178446349888] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-08 14:22:11,967] [middleware.21] [13523] [140028869080640] <JsonResponse status_code=400, "application/json">
+[ERROR] [2022-12-08 14:24:43,952] [middleware.21] [13619] [140485311067712] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-08 14:25:03,569] [middleware.21] [13619] [140485226133056] <TemplateResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 14:25:03,653] [middleware.21] [13619] [140485226133056] <HttpResponse status_code=200, "text/javascript; charset="utf-8"">
+[ERROR] [2022-12-08 14:25:10,334] [middleware.21] [13619] [140485226133056] <TemplateResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 14:25:13,363] [middleware.21] [13619] [140485226133056] <HttpResponseRedirect status_code=302, "text/html; charset=utf-8", url="/admin/movies/movie/">
+[ERROR] [2022-12-08 14:25:13,394] [middleware.21] [13619] [140485226133056] <TemplateResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 14:25:13,486] [middleware.21] [13619] [140485226133056] <HttpResponse status_code=200, "text/javascript; charset="utf-8"">
+[ERROR] [2022-12-08 14:25:19,357] [middleware.21] [13619] [140485311067712] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-08 14:25:39,771] [middleware.21] [13619] [140485311067712] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-08 14:27:12,802] [middleware.21] [13708] [139806844646976] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-08 14:27:26,430] [middleware.21] [13708] [139806844646976] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-08 14:29:11,780] [middleware.21] [13806] [139945977050688] <JsonResponse status_code=400, "application/json">
+[ERROR] [2022-12-08 14:29:27,074] [middleware.21] [13825] [139800027854400] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 14:29:50,329] [middleware.21] [13841] [139819117180480] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 14:29:57,338] [middleware.21] [13841] [139819117180480] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 14:30:12,097] [middleware.21] [13863] [140591473096256] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-08 14:32:19,310] [middleware.21] [13907] [139949444691520] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-08 14:32:26,638] [middleware.21] [13907] [139949361854016] <TemplateResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 14:32:26,714] [middleware.21] [13907] [139949361854016] <HttpResponse status_code=200, "text/javascript; charset="utf-8"">
+[ERROR] [2022-12-08 14:32:32,852] [middleware.21] [13907] [139949361854016] <TemplateResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 14:32:33,977] [middleware.21] [13907] [139949361854016] <HttpResponseRedirect status_code=302, "text/html; charset=utf-8", url="/admin/movies/movie/">
+[ERROR] [2022-12-08 14:32:34,013] [middleware.21] [13907] [139949361854016] <TemplateResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 14:32:34,104] [middleware.21] [13907] [139949361854016] <HttpResponse status_code=200, "text/javascript; charset="utf-8"">
+[ERROR] [2022-12-08 14:32:39,302] [middleware.21] [13907] [139949444691520] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-08 14:34:18,633] [middleware.21] [13907] [139949444691520] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-08 14:34:59,787] [middleware.21] [14021] [139656891987520] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 14:35:06,585] [middleware.21] [14021] [139656891987520] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 14:35:46,911] [middleware.21] [14054] [140666836350528] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-08 14:39:49,450] [middleware.21] [14166] [140600681690688] <TemplateResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 14:39:49,516] [middleware.21] [14166] [140600681690688] <HttpResponse status_code=200, "text/javascript; charset="utf-8"">
+[ERROR] [2022-12-08 14:40:55,174] [middleware.21] [14219] [140700775609920] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-08 14:43:16,223] [middleware.21] [14274] [139870508938816] <JsonResponse status_code=400, "application/json">
+[ERROR] [2022-12-08 14:43:28,475] [middleware.21] [14274] [139870508938816] <JsonResponse status_code=400, "application/json">
+[ERROR] [2022-12-08 14:44:30,492] [middleware.21] [14362] [139850598577728] <JsonResponse status_code=400, "application/json">
+[ERROR] [2022-12-08 14:44:32,176] [middleware.21] [14362] [139850598577728] <JsonResponse status_code=400, "application/json">
+[ERROR] [2022-12-08 14:47:39,134] [middleware.21] [14425] [140691291240000] <JsonResponse status_code=400, "application/json">
+[ERROR] [2022-12-08 14:48:14,898] [middleware.21] [14449] [140671117686336] <Response status_code=405, "application/json">
+[ERROR] [2022-12-08 14:48:26,532] [middleware.21] [14464] [139722296915520] <JsonResponse status_code=400, "application/json">
+[ERROR] [2022-12-08 14:49:04,329] [middleware.21] [14518] [139707695494720] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-08 14:55:25,880] [middleware.21] [14776] [139901331830336] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-08 14:55:30,210] [middleware.21] [14776] [139901331830336] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-08 14:56:12,686] [middleware.21] [14802] [139888342070848] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-08 14:56:22,063] [middleware.21] [14802] [139888342070848] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-08 14:59:58,902] [middleware.21] [15072] [140493230962240] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-08 15:00:06,907] [middleware.21] [15072] [140493230962240] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-08 15:00:51,283] [middleware.21] [15106] [139667352581696] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-08 15:00:52,340] [middleware.21] [15106] [139667352581696] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-08 15:00:53,313] [middleware.21] [15106] [139667352581696] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-08 15:00:58,156] [middleware.21] [15106] [139667352581696] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-08 15:01:09,206] [middleware.21] [15106] [139667352581696] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-08 15:01:44,349] [middleware.21] [15141] [140585429104192] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-08 15:02:40,820] [middleware.21] [15173] [140227407509056] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-08 15:03:13,944] [middleware.21] [15192] [140396941276736] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-08 15:03:20,120] [middleware.21] [15192] [140396941276736] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-08 15:06:45,758] [middleware.21] [15362] [140515177657920] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 15:06:49,256] [middleware.21] [15362] [140515177657920] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-08 15:07:30,117] [middleware.21] [15385] [140424010266176] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-08 15:09:44,757] [middleware.21] [15460] [140035020482112] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-08 15:14:13,755] [middleware.21] [15550] [139872216020544] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-08 15:14:38,923] [middleware.21] [15550] [139872216020544] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-08 15:14:40,111] [middleware.21] [15550] [139872216020544] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-08 15:14:50,173] [middleware.21] [15550] [139872216020544] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-10 14:11:53,428] [middleware.21] [32617] [140099779016256] <HttpResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 14:12:13,768] [middleware.21] [32617] [140099779016256] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-10 14:12:13,949] [middleware.21] [32617] [140099779016256] <HttpResponseNotFound status_code=404, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 14:13:13,686] [middleware.21] [32617] [140099787408960] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-10 14:13:25,707] [middleware.21] [32617] [140099779016256] <TemplateResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 14:13:26,050] [middleware.21] [32617] [140099779016256] <TemplateResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 14:13:28,464] [middleware.21] [32617] [140099408881216] <TemplateResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 14:13:28,722] [middleware.21] [32617] [140099408881216] <HttpResponse status_code=200, "text/javascript; charset="utf-8"">
+[ERROR] [2022-12-10 14:13:29,721] [middleware.21] [32617] [140099779016256] <HttpResponse status_code=200, "text/javascript; charset="utf-8"">
+[ERROR] [2022-12-10 14:13:38,001] [middleware.21] [32617] [140099787408960] <HttpResponseNotFound status_code=404, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 14:13:46,995] [middleware.21] [32617] [140099787408960] <Response status_code=404, "application/json">
+[ERROR] [2022-12-10 14:13:50,780] [middleware.21] [32617] [140099787408960] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-10 14:13:59,235] [middleware.21] [32617] [140099787408960] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-10 14:14:00,680] [middleware.21] [32617] [140099787408960] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-10 14:14:56,731] [middleware.21] [32617] [140099787408960] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-10 14:16:31,372] [middleware.21] [32617] [140099787408960] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-10 14:17:47,965] [middleware.21] [33460] [140656727029312] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-10 14:18:18,193] [middleware.21] [33460] [140656727029312] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-10 14:19:12,058] [middleware.21] [33460] [140656727029312] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-10 14:19:23,449] [middleware.21] [33460] [140656727029312] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-10 14:24:06,648] [middleware.21] [33623] [140149538158144] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-10 14:24:19,957] [middleware.21] [33623] [140149538158144] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-10 14:24:24,478] [middleware.21] [33623] [140149538158144] <HttpResponseNotFound status_code=404, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 14:27:34,951] [middleware.21] [33731] [139779594253888] <HttpResponseNotFound status_code=404, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 14:27:40,126] [middleware.21] [33731] [139779594253888] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-10 14:27:47,749] [middleware.21] [33731] [139779594253888] <Response status_code=405, "application/json">
+[ERROR] [2022-12-10 14:28:18,100] [middleware.21] [33766] [140684123174464] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-10 14:29:01,329] [middleware.21] [33766] [140684123174464] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-10 14:30:17,347] [middleware.21] [33896] [140638828885568] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-10 14:30:29,382] [middleware.21] [33896] [140638828885568] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-10 14:31:09,835] [middleware.21] [33929] [140575982483008] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 14:44:28,806] [middleware.21] [34531] [140423966225984] <HttpResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 14:45:07,796] [middleware.21] [34531] [140423610754624] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 14:45:41,291] [middleware.21] [34725] [140550876427840] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 14:45:48,058] [middleware.21] [34725] [140550876427840] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 14:51:33,298] [middleware.21] [35012] [140510694995520] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 14:53:09,877] [middleware.21] [35059] [140226884269632] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 14:54:07,817] [middleware.21] [35137] [140218119222848] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 14:54:57,362] [middleware.21] [35170] [140179635435072] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 14:55:05,573] [middleware.21] [35170] [140179635435072] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 14:56:43,501] [middleware.21] [35211] [139844121523776] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 15:00:16,227] [middleware.21] [35368] [140561381058112] <TemplateResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 15:00:16,411] [middleware.21] [35368] [140561362175552] <HttpResponse status_code=200, "text/javascript; charset="utf-8"">
+[ERROR] [2022-12-10 15:00:29,357] [middleware.21] [35368] [140561353782848] <TemplateResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 15:00:30,696] [middleware.21] [35368] [140561353782848] <HttpResponseRedirect status_code=302, "text/html; charset=utf-8", url="/admin/movies/movie/">
+[ERROR] [2022-12-10 15:00:30,857] [middleware.21] [35368] [140561353782848] <TemplateResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 15:00:30,986] [middleware.21] [35368] [140561353782848] <HttpResponse status_code=200, "text/javascript; charset="utf-8"">
+[ERROR] [2022-12-10 15:04:52,042] [middleware.21] [35739] [139827912635968] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 15:15:34,651] [middleware.21] [36064] [140117805102656] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 15:16:04,806] [middleware.21] [36090] [139757334033984] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 15:20:06,874] [middleware.21] [36210] [140704214939200] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 15:24:47,561] [middleware.21] [36548] [140576221558336] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 15:25:07,347] [middleware.21] [36548] [140576221558336] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-10 15:25:15,123] [middleware.21] [36548] [140576221558336] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 15:25:53,702] [middleware.21] [36589] [140574251284032] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 15:32:19,324] [middleware.21] [36868] [139926544840256] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 15:32:27,474] [middleware.21] [36868] [139926536447552] <TemplateResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 15:32:27,621] [middleware.21] [36868] [139926536447552] <HttpResponse status_code=200, "text/javascript; charset="utf-8"">
+[ERROR] [2022-12-10 15:34:11,223] [middleware.21] [36958] [139632442340928] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 15:36:22,030] [middleware.21] [37049] [139998230738496] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 15:37:43,248] [middleware.21] [37101] [140200092104256] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-10 15:37:59,651] [middleware.21] [37101] [140199745025600] <TemplateResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 15:37:59,750] [middleware.21] [37101] [140199745025600] <HttpResponse status_code=200, "text/javascript; charset="utf-8"">
+[ERROR] [2022-12-10 15:40:45,692] [middleware.21] [37140] [140597495068224] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-10 15:45:52,047] [middleware.21] [37384] [140060601087552] <HttpResponse status_code=204, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 15:46:03,712] [middleware.21] [37384] [140060590597696] <TemplateResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 15:46:03,816] [middleware.21] [37384] [140060590597696] <HttpResponse status_code=200, "text/javascript; charset="utf-8"">
+[ERROR] [2022-12-10 15:48:50,149] [middleware.21] [37528] [139891877869120] <HttpResponse status_code=204, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 15:48:56,386] [middleware.21] [37528] [139891868427840] <TemplateResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 15:48:56,469] [middleware.21] [37528] [139891868427840] <HttpResponse status_code=200, "text/javascript; charset="utf-8"">
