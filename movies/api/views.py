@@ -44,17 +44,26 @@ from django.shortcuts import redirect, get_object_or_404
 #         movie.save()
 #         return HttpResponse(status=204)
 
+#
+# class MoviesList(APIView):
+#
+#     def get(self, request):
+#         movies = Movie.objects.filter(is_valid=True)
+#         serializer = MovieSerializer(movies, many=True)
+#         return JsonResponse(serializer.data, safe=False)
+#
+#     def post(self, request, **validated_data):
+#         serializer = MovieSerializer(data=request.data)
+#         if serializer.is_valid():
+#             serializer.save()
+#             return JsonResponse(serializer.data, status=201)
+#         return JsonResponse(serializer.errors, status=400)
 
-class MoviesList(APIView):
+class MoviesList(generics.ListCreateAPIView):
+    queryset = Movie.objects.filter(is_valid=True)
+    serializer_class = MovieSerializer
 
-    def get(self, request):
-        movies = Movie.objects.filter(is_valid=True)
-        serializer = MovieSerializer(movies, many=True)
-        return JsonResponse(serializer.data, safe=False)
 
-    def post(self, request, **validated_data):
-        serializer = MovieSerializer(data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return JsonResponse(serializer.data, status=201)
-        return JsonResponse(serializer.errors, status=400)
+class MovieDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Movie.objects.filter(is_valid=True)
+    serializer_class = MovieSerializer
