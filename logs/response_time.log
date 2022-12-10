@@ -613,3 +613,25 @@
 [ERROR] [2022-12-10 15:48:50,149] [middleware.21] [37528] [139891877869120] <HttpResponse status_code=204, "text/html; charset=utf-8">
 [ERROR] [2022-12-10 15:48:56,386] [middleware.21] [37528] [139891868427840] <TemplateResponse status_code=200, "text/html; charset=utf-8">
 [ERROR] [2022-12-10 15:48:56,469] [middleware.21] [37528] [139891868427840] <HttpResponse status_code=200, "text/javascript; charset="utf-8"">
+[ERROR] [2022-12-10 15:54:50,628] [middleware.21] [37954] [139639513937472] <JsonResponse status_code=400, "application/json">
+[ERROR] [2022-12-10 15:55:14,660] [middleware.21] [37954] [139639513937472] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-10 16:08:52,878] [middleware.21] [38431] [140702551897664] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-10 16:09:17,463] [middleware.21] [38431] [140702543504960] <TemplateResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 16:09:17,742] [middleware.21] [38431] [140702535112256] <HttpResponse status_code=200, "text/javascript; charset="utf-8"">
+[ERROR] [2022-12-10 16:09:18,895] [middleware.21] [38431] [140702112540224] <TemplateResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 16:09:21,624] [middleware.21] [38431] [140702112540224] <TemplateResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 16:09:21,801] [middleware.21] [38431] [140702112540224] <HttpResponse status_code=200, "text/javascript; charset="utf-8"">
+[ERROR] [2022-12-10 16:09:28,658] [middleware.21] [38431] [140702112540224] <TemplateResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 16:09:28,728] [middleware.21] [38431] [140702112540224] <HttpResponse status_code=200, "text/javascript; charset="utf-8"">
+[ERROR] [2022-12-10 16:09:33,367] [middleware.21] [38431] [140702112540224] <TemplateResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 16:09:41,386] [middleware.21] [38431] [140702112540224] <HttpResponseRedirect status_code=302, "text/html; charset=utf-8", url="/admin/movies/movie/">
+[ERROR] [2022-12-10 16:09:41,528] [middleware.21] [38431] [140702112540224] <TemplateResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 16:09:41,732] [middleware.21] [38431] [140702112540224] <HttpResponse status_code=200, "text/javascript; charset="utf-8"">
+[ERROR] [2022-12-10 16:09:45,550] [middleware.21] [38431] [140702551897664] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-10 16:14:17,820] [middleware.21] [38744] [140567650498112] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 16:16:10,555] [middleware.21] [38888] [139768163726912] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 16:16:32,444] [middleware.21] [38913] [140702457525824] <JsonResponse status_code=200, "application/json">
+[ERROR] [2022-12-10 16:19:26,866] [middleware.21] [39134] [139875049272896] <HttpResponse status_code=500, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 16:27:20,323] [middleware.21] [39517] [140449283044928] <JsonResponse status_code=201, "application/json">
+[ERROR] [2022-12-10 16:27:27,828] [middleware.21] [39517] [140449274652224] <TemplateResponse status_code=200, "text/html; charset=utf-8">
+[ERROR] [2022-12-10 16:27:27,889] [middleware.21] [39517] [140449274652224] <HttpResponse status_code=200, "text/javascript; charset="utf-8"">

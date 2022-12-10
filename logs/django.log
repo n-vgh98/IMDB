@@ -2295,3 +2295,98 @@ Traceback (most recent call last):
   File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 186, in __get__
     raise AttributeError(
 AttributeError: Manager isn't accessible via Movie instances
+[ERROR] [2022-12-10 16:14:17,814] [log.241] [38744] [140567650498112] Internal Server Error: /api/movies/
+Traceback (most recent call last):
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/movies/api/views.py", line 53, in get
+    return JsonResponse(serializer.data, safe=False)
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/rest_framework/relations.py", line 565, in to_representation
+    return [
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/rest_framework/relations.py", line 566, in <listcomp>
+    self.child_relation.to_representation(value)
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/rest_framework/relations.py", line 469, in to_representation
+    return getattr(obj, self.slug_field)
+AttributeError: 'Genre' object has no attribute 'genres'
+[ERROR] [2022-12-10 16:16:10,544] [log.241] [38888] [139768163726912] Internal Server Error: /api/movies/
+Traceback (most recent call last):
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/movies/api/views.py", line 53, in get
+    return JsonResponse(serializer.data, safe=False)
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/rest_framework/relations.py", line 565, in to_representation
+    return [
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/rest_framework/relations.py", line 566, in <listcomp>
+    self.child_relation.to_representation(value)
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/rest_framework/relations.py", line 469, in to_representation
+    return getattr(obj, self.slug_field)
+AttributeError: 'Genre' object has no attribute 'genres'
+[ERROR] [2022-12-10 16:19:26,862] [log.241] [39134] [139875049272896] Internal Server Error: /api/movies/
+Traceback (most recent call last):
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/venv/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/armanpc/PycharmProjects/django-projects/IMDB/movies/api/views.py", line 59, in post
+    return JsonResponse(status=201)
+TypeError: JsonResponse.__init__() missing 1 required positional argument: 'data'
